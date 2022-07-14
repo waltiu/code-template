@@ -1,4 +1,4 @@
-# Webpack 5 Max (JS/React/TS)
+# Webpack 5 Max (Vue)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
