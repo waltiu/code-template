@@ -4,8 +4,8 @@ import styles from "./index.module.less";
 console.log(styles, "styles");
 const Login = () => {
   const [state, setState] = useState(2);
-  const a = 1;
-  a = 4;
+  const b = 1;
+
   return (
     <div className={styles.login}>
       <div>--Hello Waltiu --</div>
