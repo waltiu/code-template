@@ -4,4 +4,7 @@
   "editor.tabSize": 2, //字符缩进
   "notebook.output.textLineLimit": 120, //字符长度
   "editor.lineHeight": 25, // 行高
+  "editor.codeActionsOnSave": { // ctr+s 自动校验eslint
+    "source.fixAll": true
+  }
 }
