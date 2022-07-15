@@ -1,8 +1,12 @@
 import { useState } from "react";
+import { Button } from "antd";
+import styles from "./index.module.less";
+console.log(styles, "styles");
 const Login = () => {
   const [state, setState] = useState(1);
   return (
-    <div>
+    <div className={styles.login}>
+      <div>--Hello Waltiu --</div>
       <div
         onClick={() => {
           setState(state + 1);
@@ -10,6 +14,7 @@ const Login = () => {
       >
         {state}
       </div>
+      <Button type="primary">Button</Button>
     </div>
   );
 };

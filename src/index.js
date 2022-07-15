@@ -1,23 +1,11 @@
-import React, { StrictMode } from "react";
+import { StrictMode } from "react";
 import { render } from "react-dom";
-// components
 import { App } from "./App";
-// styles
-
-console.log(process.env.SECRET);
-
-import logo from "./assets/logo.png";
-
-const imgStyles = {
-  width: "100px",
-  display: "block",
-  margin: "0.5rem auto 0",
-};
+import "./index.css";
 
 const rootEl = document.getElementById("root");
 render(
   <StrictMode>
-    <img src={logo} alt="#" style={imgStyles} />
     <App />
   </StrictMode>,
   rootEl
