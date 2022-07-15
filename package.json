@@ -10,7 +10,7 @@
     "build": "webpack -c config/webpack/prod.js",
     "git-cz": "git-cz",
     "lint-staged": "lint-staged",
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "lint:fix": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "pwa": "webpack -c config/webpack/pwa.js",
     "analyze": "webpack --analyze -c config/webpack/analyze.js",
     "prepare": "husky install",
@@ -18,7 +18,7 @@
     "find:less": "rm -rf files.less.txt && find ./src -type f ( -iname \"*.less\" -o -iname \"*.css\" )  -print0 | xargs -0 wc -l | sort -n >> files.less.txt | echo 'Done. See files.less.txt for stats'"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": "npm run lint"
+    "src/**/*.{js,jsx,ts,tsx}": "npm run lint:fix"
   },
   "dependencies": {
     "antd": "^4.21.6",
